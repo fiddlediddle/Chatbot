@@ -14,11 +14,6 @@ package codeanticode.eliza;
  *  Does the input transformations.
  */
 public class Eliza {
-  public Eliza(PApplet parent) {
-		this.parent = parent;
-		
-		readDefaultScript();
-  }
   
   public Eliza() {
 	  readDefaultScript();
