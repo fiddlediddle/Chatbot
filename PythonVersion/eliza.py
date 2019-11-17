@@ -271,7 +271,7 @@ gPats = [
   [r'quit',
   [  "Thank you for talking with me.",
     "Good-bye.",
-    "Thank you, that will be $150.  Have a good day!"]],
+    "We do. We... do-be-do."]],
 
   [r'(.*)',
   [  "Please tell me more.",
@@ -290,23 +290,22 @@ gPats = [
 #  command_interface
 #----------------------------------------------------------------------
 def command_interface():
-  print('Therapist\n---------')
+  print('Aristotle\n---------')
   print('Talk to the program by typing in plain English, using normal upper-')
   print('and lower-case letters and punctuation.  Enter "quit" when done.')
   print('='*72)
   print('Hello.  How are you feeling today?')
 
   s = ''
-  therapist = eliza();
+  aristotle = eliza();
   while s != 'quit':
     try:
       s = input('> ')
     except EOFError:
       s = 'quit'
-    print(s)
     while s[-1] in '!.':
       s = s[:-1]
-    print(therapist.respond(s))
+    print(aristotle.respond(s))
 
 
 if __name__ == "__main__":
