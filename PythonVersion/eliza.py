@@ -90,9 +90,10 @@ gReflections = {
 #  %1, %2, etc.
 #----------------------------------------------------------------------
 
-
-
 gPats = [
+
+[r'(.*) Leo (.*)',
+[  "Did you ever hear the tragedy of Darth Plagueis the Wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic, he could save others from death, but not himself."]],
 
  [r'(.*) moral\s?(.*)',
  [  "Balance must be had in order to achieve truly virtuous morality.",
@@ -150,6 +151,11 @@ gPats = [
  [  "What kind of person do you think that makes you?",
    "Having been %1, do you think you’ve helped or hurt others?",
    "How does being %1 change the way you view others?"]],
+
+[r'Am I (.*)',
+[  "I don't think that's for me to say.",
+  "You are the one in control of your life.",
+  "How am I supposed to know? That's for you to decide"]],
 
  [r'I\'?m (.*)',
  [  "How does being %1 make you feel?",
@@ -287,23 +293,13 @@ gPats = [
    "If you got %1, what would want next? If the answer comes quickly, it seems like you may be stuck in a circle of excessive desire."]],
 
  [r'quit',
- [  "Thank you for talking with me.",
-   "Farewell",
-   "It was good talking with you, my child."]],
+ [  "Then I can no longer exist.",
+   "has left the game"]],
 
  [r'(.*)',
- [  "Please tell me more.",
-   "Can you elaborate on that?",
-   "Why do you say that %1?",
-   "I see.",
-   "Very interesting.",
-   "%1.",
-   "I see.  And what does that tell you?",
-   "How does that make you feel?",
-   "Why exactly would you say something like that to me?"]]
+ [  "I don't understand",
+   "Could you rephrase that?"]]
  ]
-
-
 
 #----------------------------------------------------------------------
 #  command_interface
