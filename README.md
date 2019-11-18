@@ -1,6 +1,7 @@
-Initial commit
+An adaptation of Eliza by Joe Strout created by Seal Team 6 Part 2: Electric Boogaloo
 
-TODO
-Port Eliza code into group repo
-Get Josh and Chad's lanky asses in the new github
-ligma
+TODO [
+Finalize reformatting of responses and triggers;
+Clean up code (format spaces to tabs);
+Remove extra whitespace;
+]
